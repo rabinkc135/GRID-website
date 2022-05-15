@@ -56,8 +56,6 @@
 .body1{
     display: grid;
     grid-gap: 10px;
-    /*grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);*/
     grid-template-areas:
     'left  left  upper'
     'left  left  lower';
@@ -158,5 +156,37 @@
 }
 
 
+
+
+
+.nav-menu .service li{
+    display: none;
+}
+
+.nav-menu li:hover  .service li{
+    display: contents;
+    position: absolute;
+    width:100%
+}
+
+.nav-menu li{
+    position: relative;
+}
+
+.service{
+    list-style: none;
+}
+
+.service li{
+    margin: 0;
+    
+
+}
+
+
+.btn:hover{
+    background-color: blue;
+
+}
 
 
