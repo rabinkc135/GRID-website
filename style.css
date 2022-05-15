@@ -1,0 +1,162 @@
+*{
+    margin:5px;
+    padding: 2px;
+    box-sizing: border-box;
+    background-color: lightgray;
+    line-height: 20px;
+    /*position: relative;
+    z-index: 10;*/
+}
+
+.nav-menu {
+    display: grid;
+    /*grid-template-rows: repeat(4, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style: none;
+    padding: 0;
+   
+}
+
+.nav-menu a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 0 20px gray;
+    text-align: center;
+    padding: 5px;
+}
+
+
+.nav-menu a:hover{
+    display: block;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+.btn{
+    background-color: black;
+    color: aliceblue;
+    padding: 6px 13px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 0;
+}
+
+
+.right .btn:hover{
+    background-color: green;
+}
+
+
+.body1{
+    display: grid;
+    grid-gap: 10px;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);*/
+    grid-template-areas:
+    'left  left  upper'
+    'left  left  lower';
+    
+}
+
+.left {
+    grid-area: left;
+    min-height: 400px;
+    background: url(first.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 0 0 20px gray;
+
+}
+
+.left h1{
+    font-size: 40px;
+    margin-bottom: 0;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.left p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: none;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.upper {
+    grid-area: upper;
+}
+
+.lower {
+    grid-area: lower;
+}
+
+.right{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 0 20px gray;
+}
+
+.right p{
+    font-size: 30px;
+}
+
+.body2{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+.body2 .box{
+    box-shadow:0 0 20px gray;
+    text-align: center;
+}
+
+.body3{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 300px;
+    box-shadow: 0 0 20px gray;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.body3 .left1{
+    background: url(bright.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.body3 .right1{
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+}
+
+.right1 h2{
+    font-size: 30px;
+}
+
+.footer p{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    height: 30px;
+}
+
+
+
+
